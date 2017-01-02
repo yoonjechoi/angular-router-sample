@@ -4,6 +4,7 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { FormsModule } from "@angular/forms";
 import {HeroRoutingModule} from "./heroes-routing.module";
+import {HeroService} from "./hero.service";
 
 @NgModule({
   imports: [
@@ -11,9 +12,14 @@ import {HeroRoutingModule} from "./heroes-routing.module";
     FormsModule,
     HeroRoutingModule
   ],
-  declarations: [HeroListComponent, HeroDetailComponent],
-  providers: [
 
+  declarations: [
+    HeroListComponent,
+    HeroDetailComponent
+  ],
+
+  providers: [
+    HeroService
   ]
 })
 export class HeroesModule { }
