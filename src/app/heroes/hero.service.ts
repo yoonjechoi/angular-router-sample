@@ -24,14 +24,14 @@ export class HeroService {
   getHeroes(): Observable<Hero[]> {
     return Observable.create(function(subscriber) {
       subscriber.next(HEROS);
-      subscriber.complete()
+      subscriber.complete();
     });
   }
 
   getHero(id: number | string): Observable<Hero> {
     return Observable.create(function(subscriber) {
-      subscriber.next(HEROS.find(hero => hero.id == +id));
-      subscriber.complete()
+      subscriber.next(HEROS.find(hero => hero.id === +id));
+      subscriber.complete();
     });
   }
 }

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {HeroesModule} from "./heroes/heroes.module";
+import {CrisisCenterModule} from "./crisis-center/crisis-center.module";
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import {HeroesModule} from "./heroes/heroes.module";
     FormsModule,
     HttpModule,
     HeroesModule,
+    CrisisCenterModule,
     AppRoutingModule
   ],
   providers: [],
