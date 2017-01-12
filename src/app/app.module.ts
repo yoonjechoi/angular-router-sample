@@ -10,6 +10,7 @@ import {CrisisCenterModule} from "./crisis-center/crisis-center.module";
 import {ComposeMessageComponent} from "./compose-message/compose-message.component";
 import {AdminModule} from "./admin/admin.module";
 import {LoginRoutingModule} from "./auth/login-routing.module";
+import {DialogService} from "./dialog.service";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import {LoginRoutingModule} from "./auth/login-routing.module";
 
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DialogService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
