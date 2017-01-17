@@ -6,9 +6,7 @@ import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {HeroesModule} from "./heroes/heroes.module";
-import {CrisisCenterModule} from "./crisis-center/crisis-center.module";
 import {ComposeMessageComponent} from "./compose-message/compose-message.component";
-import {AdminModule} from "./admin/admin.module";
 import {LoginRoutingModule} from "./auth/login-routing.module";
 import {DialogService} from "./dialog.service";
 
@@ -30,9 +28,6 @@ import {DialogService} from "./dialog.service";
       FIXME
       To be removed
      */
-
-    CrisisCenterModule,
-    AdminModule,
 
     AppRoutingModule
   ],
